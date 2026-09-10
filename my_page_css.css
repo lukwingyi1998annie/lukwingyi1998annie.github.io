@@ -31,10 +31,8 @@ html {
     text-align: left;
     display: inline-block;
     width: 100%;
-    max-width: 1100px;
-    box-sizing: border-box; 
-    padding-left: clamp(20px, 4vw, 50px);
-    padding-right: clamp(20px, 4vw, 50px);
+    max-width: 90%;
+    box-sizing: border-box;
 }
 
 .info-item {
