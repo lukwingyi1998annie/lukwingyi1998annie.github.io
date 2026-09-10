@@ -238,6 +238,10 @@ p {
     .next-btn {
         right: 10px;
     }
+
+     h1 { font-size: 28px !important; }
+     h2 { font-size: 22px !important; }
+     .info-item { font-size: 16px !important; }
 }
 
 .lightbox-container {
