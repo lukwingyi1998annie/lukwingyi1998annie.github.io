@@ -80,7 +80,7 @@ nav {
     position: fixed;
     top: 0;
     text-align: center;
-    font-size: clamp(18px, 1.5vw + 12px, 32px);
+    font-size: 2.2vw; 
     font-weight: bold;
     padding: 10px;
     width: 100%;
