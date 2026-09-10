@@ -30,10 +30,14 @@ html {
     font-size: clamp(16px, 2vw + 10px, 26px);
     line-height: 1.5;
     text-align: left;
-    display: inline-block;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 90%;
     box-sizing: border-box;
+    margin: 0 auto !important;
 }
 
 .info-item {
@@ -134,6 +138,10 @@ p {
     box-sizing: border-box;
     padding-left: clamp(25px, 6vw, 60px);
     padding-right: clamp(25px, 6vw, 60px);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .active {
