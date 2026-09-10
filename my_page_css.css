@@ -26,10 +26,15 @@ html {
 
 .info-container {
     color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: clamp(16px, 2vw + 10px, 26px);
     line-height: 1.5;
     text-align: left;
     display: inline-block;
+    width: 100%;
+    max-width: 1100px;
+    box-sizing: border-box; 
+    padding-left: clamp(20px, 4vw, 50px);
+    padding-right: clamp(20px, 4vw, 50px);
 }
 
 .info-item {
