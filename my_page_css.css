@@ -34,7 +34,7 @@ html {
 
 .info-item {
     color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: clamp(16px, 2vw + 10px, 26px);
     line-height: 1.2;
     margin-bottom: 8px;
 }
@@ -80,7 +80,7 @@ nav {
     position: fixed;
     top: 0;
     text-align: center;
-    font-size: clamp(18px, 1.5vw + 12px, 32px);
+    font-size: 2.2vw;
     font-weight: bold;
     padding: 10px;
     width: 100%;
@@ -100,14 +100,14 @@ div.container {
 h1 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 50px;
+    font-size: clamp(28px, 4vw + 15px, 55px);
     margin-bottom: 10px;
 }
 
 h2 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 30px;
+    font-size: clamp(20px, 2.5vw + 12px, 36px);
     margin-bottom: 5px;
 }
 
@@ -238,6 +238,10 @@ p {
     .next-btn {
         right: 10px;
     }
+
+    h1 { font-size: 28px !important; }
+    h2 { font-size: 22px !important; }
+    .info-item { font-size: 16px !important; }
 }
 
 .lightbox-container {
