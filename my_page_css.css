@@ -14,13 +14,12 @@ html {
     background-color: rgb(4, 9, 43);
     width: 100%;
     height: auto !important;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start !important; 
     align-items: center;
-    text-align: center;
-    padding-top: 100px !important;
-    padding-bottom: 60px;
+    text-align: center;padding: 140px 0 80px 0 !important; 
     box-sizing: border-box;
     overflow: hidden;
     overflow-y: auto;
@@ -421,8 +420,8 @@ p {
   position: absolute;
   top: 85px;
   bottom: 10px;
-  left: 10px;
-  right: 10px; 
+  left: clamp(10px, 4vw, 25px);
+  right: clamp(10px, 4vw, 25px); 
   z-index: 9999;
   pointer-events: none;
   border: 40px solid transparent;
