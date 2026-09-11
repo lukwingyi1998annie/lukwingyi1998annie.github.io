@@ -44,7 +44,12 @@ html {
     color: rgb(255, 255, 255);
     font-size: clamp(16px, 2vw + 10px, 26px);
     line-height: 1.2;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    text-align: center !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
 }
 
 #slide1 {
