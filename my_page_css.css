@@ -464,7 +464,7 @@ p {
   bottom: 10px;
   left: 10px;
   right: 10px; 
-  z-index: 9999;
+  z-index: 9998;
   pointer-events: none;
   border: 40px solid transparent;
   border-image-source: url('/phto/frame/9_Block.png');
