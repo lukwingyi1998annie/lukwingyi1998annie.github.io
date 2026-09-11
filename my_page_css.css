@@ -15,15 +15,15 @@ html {
     width: 100%;
     height: auto !important;
     min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     justify-content: center !important; 
     align-items: center !important;
     text-align: center;
-    padding: 140px 0 80px 0 !important;
+    padding-top: 100px !important;
+    padding-bottom: 60px !important;
     box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: visible !important; 
 }
 
 .info-container {
