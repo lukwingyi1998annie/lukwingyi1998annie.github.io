@@ -33,10 +33,11 @@ html {
     line-height: 1.5;
     text-align: left;
     display: block !important;
-    width: 100%;
-    max-width: 90%;          
+    width: 80% !important;
+    max-width: 950px !important;          
     box-sizing: border-box;
-    margin: auto !important; 
+    margin: auto !important;
+    text-align: center !important;
 }
 
 .info-item {
