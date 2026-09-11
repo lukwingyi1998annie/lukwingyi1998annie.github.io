@@ -1,29 +1,30 @@
-body,
 html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
 .slide {
     position: relative;
     background-color: rgb(4, 9, 43);
-    width: 100%;
-    height: auto !important;
-    min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start !important; 
+    justify-content: center !important;
     align-items: center !important;
     text-align: center;
-    padding: 130px 0 60px 0 !important;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-snap-stop: always;
 }
 
 .info-container {
@@ -440,14 +441,74 @@ p {
 .slide::after {
   content: "";
   position: absolute;
-  top: 75px;
-  bottom: 15px;
-  left: 10px;
-  right: 10px; 
+  top: 5vw;
+  bottom: 0.5vw;
+  left: 0.5vw;
+  right: 0.5vw; 
   z-index: 9998;
   pointer-events: none;
-  border: 40px solid transparent;
+  border: 2vw solid transparent;
   border-image-source: url('/phto/frame/9_Block.png');
   border-image-slice: 135;
   border-image-repeat: round;
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        width: 100vh;
+        height: 100vw;transform: rotate(90deg) translate3d(0, -100vh, 0);
+        transform-origin: 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        scroll-snap-type: y mandatory;
+    }
+
+    .slide {
+        width: 100vh;
+        height: 100vw;
+        scroll-snap-align: start;
+        padding: 60px 20px !important;
+    }
+    
+    nav {
+        width: 100vh !important;
+    }
+    
+    .danmaku-container, #imageLightbox {
+        width: 100vh !important;
+        height: 100vw !important;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-type: y mandatory;
+    }
+
+    .slide {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        padding: 80px 40px !important;
+    }
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar,
+.scroll-container::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+}
+
+body, html, .scroll-container {
+    scrollbar-width: none !important;
+}
+
+body, html, .scroll-container {
+    -ms-overflow-style: none !important; 
 }
