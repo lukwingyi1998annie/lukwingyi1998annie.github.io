@@ -49,6 +49,22 @@ html {
     padding-right: 15px !important;
 }
 
+.slide .info-container:not(:has(.info-item)) {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 40px !important; 
+    margin-bottom: 10px !important;
+}
+
+.slide .info-container:not(:has(.info-item)) span {
+    display: block !important;
+    text-align: center !important;
+    font-size: 28px !important;
+    margin-bottom: 5px !important;
+}
+
 #slide1 {
     background-color: rgb(4, 9, 43);
 }
@@ -90,7 +106,7 @@ nav {
     position: fixed;
     top: 0;
     text-align: center;
-    font-size: 30px;
+    font-size: clamp(18px, 1.5vw + 12px, 32px);
     font-weight: bold;
     padding: 10px;
     width: 100%;
