@@ -363,6 +363,19 @@ p {
         border-left: none;
         border-top: 1px solid #2c2c2e;
     }
+    html, body {
+        height: auto !important;
+        overflow: visible !important;
+        overflow-y: auto !important;
+    }
+
+.slide {
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow: visible !important;
+        overflow-y: auto !important;
+        padding-bottom: 120px !important; 
+    }
 
     .prev-btn {
         left: 10px;
