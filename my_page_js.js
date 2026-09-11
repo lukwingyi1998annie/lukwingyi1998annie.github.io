@@ -199,10 +199,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             return;
         }
 
-        if (window.matchMedia("(max-width: 768px)").matches) {
-        return; 
-        }
-
         event.preventDefault();
 
         if (event.deltaY > 0) {
