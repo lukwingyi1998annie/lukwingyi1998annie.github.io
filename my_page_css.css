@@ -20,7 +20,7 @@ html {
     justify-content: flex-start !important; 
     align-items: center !important;
     text-align: center;
-    padding: 140px 0 80px 0 !important;
+    padding: 130px 0 60px 0 !important;
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: auto;
@@ -29,7 +29,7 @@ html {
 .info-container {
     color: rgb(255, 255, 255);
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.2;
     display: block !important;
     width: 85% !important;
     max-width: 900px !important;          
@@ -40,8 +40,8 @@ html {
 
 .info-item {
     color: rgb(255, 255, 255);
-    font-size: clamp(16px, 1.5vw + 10px, 24px) !important;
-    line-height: 1.6 !important;
+    font-size: clamp(16px, 1.5vw + 10px, 22px) !important;
+    line-height: 1.1 !important;
     margin-bottom: 12px !important;
     width: 100%;
     box-sizing: border-box;
@@ -61,15 +61,8 @@ html {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    margin-top: 30px !important;
-    margin-bottom: 10px !important;
-}
-
-.scroll-down-hint span {
-    display: block !important;
-    text-align: center !important;
-    font-size: clamp(22px, 2vw + 14px, 30px) !important;
-    margin-bottom: 4px !important;
+    margin-top: 5px !important;
+    margin-bottom: 1px !important;
 }
 
 #slide1 {
@@ -118,7 +111,7 @@ nav {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    z-index: 999;
+    z-index: 9999;
 }
 
 div.container {
@@ -145,7 +138,7 @@ h1 {
 h2 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: clamp(20px, 2.5vw + 10px, 34px) !important;
+    font-size: clamp(22px, 2.5vw + 10px, 34px) !important;
     margin-top: 0;
     margin-bottom: 20px !important;
     width: 100%;
@@ -158,7 +151,7 @@ p {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: clamp(16px, 1.2vw + 12px, 22px) !important;
-    line-height: 1.6 !important;
+    line-height: 1.2 !important;
     margin-top: 0;
     margin-bottom: 15px !important;
     width: 100%;
@@ -447,11 +440,11 @@ p {
 .slide::after {
   content: "";
   position: absolute;
-  top: 85px;
-  bottom: 10px;
+  top: 75px;
+  bottom: 15px;
   left: 10px;
   right: 10px; 
-  z-index: 9999;
+  z-index: 9998;
   pointer-events: none;
   border: 40px solid transparent;
   border-image-source: url('/phto/frame/9_Block.png');
