@@ -490,41 +490,6 @@ p {
 
 }
 
-@media (min-aspect-ratio: 1/1) {
-    body {
-        width: 100vw !important;
-        max-width: 100vw !important;
-        height: 100vh !important;
-        max-height: 100vh !important;
-        overflow-y: scroll !important;
-        overflow-x: hidden !important;
-        scroll-snap-type: y mandatory !important;
-        transform: none !important;
-        position: relative !important;
-    }
-
-    .slide {
-        width: 100vw !important;
-        height: 100vh !important;
-        max-width: 100vw !important;
-        max-height: 100vh !important;
-        scroll-snap-align: start !important;
-        scroll-snap-stop: always !important;
-        overflow-x: hidden !important;
-        overflow-y: hidden !important;
-        padding: 80px 40px 40px 40px !important;
-    }
-
-    .scroll-container,
-    .scroll-wrapper,
-    .danmaku-container,
-    #imageLightbox,
-    nav {
-        width: 100vw !important;
-        max-width: 100vw !important;
-    }
-}
-
 body::-webkit-scrollbar, 
     html::-webkit-scrollbar, 
     .slide::-webkit-scrollbar,
