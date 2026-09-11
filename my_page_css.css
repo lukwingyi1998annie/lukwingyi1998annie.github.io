@@ -453,7 +453,7 @@ p {
   border-image-repeat: round;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 1024px) {
     body {
         width: 100vh;
         height: 100vw;transform: rotate(90deg) translate3d(0, -100vh, 0);
@@ -481,7 +481,7 @@ p {
     }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-aspect-ratio: 1/1) {
     body {
         width: 100vw;
         height: 100vh;
