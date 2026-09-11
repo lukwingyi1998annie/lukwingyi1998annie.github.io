@@ -17,7 +17,7 @@ html {
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start !important; 
+    justify-content: center !important; 
     align-items: center !important;
     text-align: center;
     padding: 140px 0 80px 0 !important;
