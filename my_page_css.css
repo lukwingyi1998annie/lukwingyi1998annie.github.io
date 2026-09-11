@@ -118,7 +118,7 @@ nav {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    z-index: 999;
+    z-index: 9999;
 }
 
 div.container {
