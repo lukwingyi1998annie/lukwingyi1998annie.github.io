@@ -32,9 +32,9 @@ html {
     font-size: clamp(16px, 2vw + 10px, 26px);
     line-height: 1.5;
     text-align: left;
-    display: block !important;
-    width: 80% !important;
-    max-width: 950px !important;          
+    display: inline-block;
+    width: 100%;
+    max-width: 85% !important;          
     box-sizing: border-box;
     margin: auto !important;
     text-align: center !important;
@@ -43,13 +43,13 @@ html {
 .info-item {
     color: rgb(255, 255, 255);
     font-size: clamp(16px, 2vw + 10px, 26px);
-    line-height: 1.2;
+    line-height: 1.6 !important;
     margin-bottom: 12px;
-    text-align: center !important;
+    text-align: left !important;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 10% !important;
-    padding-right: 10% !important;
+    padding-left: clamp(20px, 8vw, 60px) !important;
+    padding-right: clamp(20px, 8vw, 60px) !important;
 }
 
 #slide1 {
@@ -441,4 +441,20 @@ p {
   border-image-source: url('/phto/frame/9_Block.png');
   border-image-slice: 135;
   border-image-repeat: round;
+}
+
+.slide .info-container:not(:has(.info-item)) {
+    display: block !important;
+    text-align: center !important; 
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 30px !important; 
+    margin-bottom: 20px !important;
+}
+
+.slide .info-container:not(:has(.info-item)) span {
+    display: block !important;
+    text-align: center !important;
+    font-size: 26px;
+    margin-bottom: 5px;
 }
