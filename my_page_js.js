@@ -199,9 +199,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
             return;
         }
 
+        if (isScrolling) {
+        event.preventDefault();
+        return;
+        }
+
         if (window.matchMedia("(max-width: 768px)").matches) {
         return; 
         }
+
+        isScrolling = true;
 
         event.preventDefault();
 
