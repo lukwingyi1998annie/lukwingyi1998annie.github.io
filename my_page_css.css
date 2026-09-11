@@ -17,9 +17,11 @@ html {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start !important; 
-    align-items: center;
-    text-align: center;padding: 140px 0 80px 0 !important; 
+    justify-content: center !important; 
+    align-items: center !important;
+    text-align: center !important;
+    padding: 120px !important; 
+    padding-bottom: 80px !important;
     box-sizing: border-box;
     overflow: hidden;
     overflow-y: auto;
@@ -30,14 +32,11 @@ html {
     font-size: clamp(16px, 2vw + 10px, 26px);
     line-height: 1.5;
     text-align: left;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block !important;
     width: 100%;
-    max-width: 90%;
+    max-width: 90%;          
     box-sizing: border-box;
-    margin: 0 auto !important;
+    margin: auto !important; 
 }
 
 .info-item {
@@ -112,9 +111,9 @@ h1 {
     margin-bottom: 10px;
     width: 100%;
     max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px !important; 
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 20px !important; 
     display: block;
 }
 
