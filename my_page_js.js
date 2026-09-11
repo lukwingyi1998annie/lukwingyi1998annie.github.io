@@ -228,4 +228,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         });
     });
+
+    document.body.addEventListener('scroll', () => {
+        let index = 0;
+
+        if (window.innerHeight > window.innerWidth) {
+            index = Math.round(document.body.scrollTop / window.innerWidth);
+        } else {
+            index = Math.round(document.body.scrollTop / window.innerHeight);
+        }
+
+        if (index !== currentSlide && index >= 0 && index < slides.length) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+        }
+    });
+
 });
