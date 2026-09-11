@@ -13,43 +13,30 @@ html {
     position: relative;
     background-color: rgb(4, 9, 43);
     width: 100%;
-    height: auto !important;
-    min-height: 100vh;
-    display: flex;
+    height: 100%;
+    display: none;
     flex-direction: column;
-    justify-content: center !important; 
-    align-items: center !important;
-    text-align: center !important;
-    padding: 120px !important; 
-    padding-bottom: 80px !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
     box-sizing: border-box;
     overflow: hidden;
-    overflow-y: auto;
 }
 
 .info-container {
     color: rgb(255, 255, 255);
-    font-size: clamp(16px, 2vw + 10px, 26px);
+    font-size: 22px;
     line-height: 1.5;
     text-align: left;
     display: inline-block;
-    width: 100%;
-    max-width: 85% !important;          
-    box-sizing: border-box;
-    margin: auto !important;
-    text-align: center !important;
 }
 
 .info-item {
     color: rgb(255, 255, 255);
-    font-size: clamp(16px, 2vw + 10px, 26px);
-    line-height: 1.6 !important;
-    margin-bottom: 12px;
-    text-align: left !important;
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: clamp(20px, 8vw, 60px) !important;
-    padding-right: clamp(20px, 8vw, 60px) !important;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 8px;
 }
 
 #slide1 {
@@ -93,7 +80,7 @@ nav {
     position: fixed;
     top: 0;
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 30px;
     font-weight: bold;
     padding: 10px;
     width: 100%;
@@ -113,40 +100,21 @@ div.container {
 h1 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: clamp(28px, 4vw + 15px, 55px);
+    font-size: 50px;
     margin-bottom: 10px;
-    width: 100%;
-    max-width: 80%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 20px !important; 
-    display: block;
 }
 
 h2 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: clamp(20px, 2.5vw + 12px, 36px);
+    font-size: 30px;
     margin-bottom: 5px;
-    width: 100%;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 p {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: clamp(16px, 1.5vw + 10px, 24px);
-    line-height: 1.6;
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: clamp(25px, 6vw, 60px);
-    padding-right: clamp(25px, 6vw, 60px);
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 0;
-    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 .active {
@@ -270,10 +238,6 @@ p {
     .next-btn {
         right: 10px;
     }
-
-    h1 { font-size: 28px !important; }
-    h2 { font-size: 22px !important; }
-    .info-item { font-size: 16px !important; }
 }
 
 .lightbox-container {
@@ -433,28 +397,12 @@ p {
   position: absolute;
   top: 85px;
   bottom: 10px;
-  left: clamp(10px, 4vw, 25px);
-  right: clamp(10px, 4vw, 25px); 
+  left: 10px;
+  right: 10px; 
   z-index: 9999;
   pointer-events: none;
   border: 40px solid transparent;
   border-image-source: url('/phto/frame/9_Block.png');
   border-image-slice: 135;
   border-image-repeat: round;
-}
-
-.slide .info-container:not(:has(.info-item)) {
-    display: block !important;
-    text-align: center !important; 
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-top: 30px !important; 
-    margin-bottom: 20px !important;
-}
-
-.slide .info-container:not(:has(.info-item)) span {
-    display: block !important;
-    text-align: center !important;
-    font-size: 26px;
-    margin-bottom: 5px;
 }
