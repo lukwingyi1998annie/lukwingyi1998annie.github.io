@@ -30,15 +30,23 @@ html {
     color: rgb(255, 255, 255);
     font-size: 22px;
     line-height: 1.5;
-    text-align: left;
-    display: inline-block;
+    display: block !important;
+    width: 85% !important;
+    max-width: 900px !important;          
+    box-sizing: border-box;
+    margin: auto auto !important; 
+    text-align: left !important; 
 }
 
 .info-item {
     color: rgb(255, 255, 255);
-    font-size: 22px;
-    line-height: 1.2;
-    margin-bottom: 8px;
+    font-size: clamp(16px, 1.5vw + 10px, 24px) !important; 
+    line-height: 1.6 !important;
+    margin-bottom: 12px !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }
 
 #slide1 {
