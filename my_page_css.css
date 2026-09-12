@@ -482,7 +482,6 @@ p {
             width: 100vw !important;
             max-width: 100vw !important;
         }
-}
 
 body::-webkit-scrollbar,
 html::-webkit-scrollbar,
@@ -503,4 +502,6 @@ body,
 html,
 .scroll-container {
     -ms-overflow-style: none !important;
+}
+
 }
