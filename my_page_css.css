@@ -473,7 +473,15 @@ p {
         height: 100vh;
         scroll-snap-align: start;
         padding: 80px 40px !important;
+        display: flex !important; 
+        visibility: visible !important;
+        opacity: 1 !important;
     }
+
+    .scroll-container, .scroll-wrapper, .danmaku-container, #imageLightbox, nav {
+            width: 100vw !important;
+            max-width: 100vw !important;
+        }
 }
 
 body::-webkit-scrollbar,
