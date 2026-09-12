@@ -249,21 +249,6 @@ p {
     right: 40px;
 }
 
-@media (max-width: 768px) {
-    .lightbox-nav {
-        font-size: 24px;
-        padding: 10px 14px;
-    }
-
-    .prev-btn {
-        left: 10px;
-    }
-
-    .next-btn {
-        right: 10px;
-    }
-}
-
 .lightbox-container {
     display: flex;
     flex-direction: row;
