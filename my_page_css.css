@@ -442,7 +442,7 @@ p {
         align-items: center !important;
         text-align: center;
         scroll-snap-align: none;
-        padding: 90px 20px 40px 24px !important;
+        padding: 80px 20px 40px 24px !important;
         overflow-x: hidden;
         overflow-y: visible;
         box-sizing: border-box;
