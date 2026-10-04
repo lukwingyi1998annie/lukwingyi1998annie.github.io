@@ -249,6 +249,21 @@ p {
     right: 40px;
 }
 
+@media (max-width: 768px) {
+    .lightbox-nav {
+        font-size: 24px;
+        padding: 10px 14px;
+    }
+
+    .prev-btn {
+        left: 10px;
+    }
+
+    .next-btn {
+        right: 10px;
+    }
+}
+
 .lightbox-container {
     display: flex;
     flex-direction: row;
@@ -402,41 +417,28 @@ p {
 }
 
 .slide::after {
-    content: "";
-    position: absolute;
-    top: 5vw;
-    bottom: 0.5vw;
-    left: 0.5vw;
-    right: 0.5vw;
-    z-index: 9998;
-    pointer-events: none;
-    border: 2vw solid transparent;
-    border-image-source: url('/phto/frame/9_Block.png');
-    border-image-slice: 135;
-    border-image-repeat: round;
+    display: none !important;
 }
 
 @media screen and (max-width: 1024px) {
     body {
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(90deg) translate3d(0, -100vh, 0);
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
         transform-origin: 0 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: none;
     }
 
     .slide {
         width: 100vh;
-        height: 100vw;
-        scroll-snap-align: start;
-        padding: 60px 20px !important;
+        height: auto;
+        scroll-snap-align: none;
+        padding: 80px 20px !important;
     }
 
     nav {
-        width: 100vh !important;
+        width: 100% !important;
     }
 
     .danmaku-container,
@@ -458,15 +460,23 @@ p {
         height: 100vh;
         scroll-snap-align: start;
         padding: 80px 40px !important;
-        display: flex !important; 
-        visibility: visible !important;
-        opacity: 1 !important;
     }
+}
 
-    .scroll-container, .scroll-wrapper, .danmaku-container, #imageLightbox, nav {
-            width: 100vw !important;
-            max-width: 100vw !important;
-        }
+body::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    bottom: 0.5vw;
+    left: 0.5vw;
+    right: 0.5vw;
+    z-index: 9998;
+    pointer-events: none;
+    border: 2vw solid transparent;
+    border-image-source: url('/phto/frame/9_Block.png');
+    border-image-slice: 135;
+    border-image-repeat: round;
+}
 
 body::-webkit-scrollbar,
 html::-webkit-scrollbar,
@@ -487,6 +497,4 @@ body,
 html,
 .scroll-container {
     -ms-overflow-style: none !important;
-}
-
 }
