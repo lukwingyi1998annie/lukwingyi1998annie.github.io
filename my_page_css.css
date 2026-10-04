@@ -438,10 +438,14 @@ p {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
         scroll-snap-align: none;
-        padding: 80px 20px !important;
+        padding: 90px 20px !important;
         overflow-x: hidden;
         overflow-y: visible;
+        box-sizing: border-box;
     }
 
     nav {
