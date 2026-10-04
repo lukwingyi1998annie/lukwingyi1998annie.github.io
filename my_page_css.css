@@ -421,31 +421,75 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-    html, body {
-        width: 100%;
-        height: auto;
-        position: static;
-        transform: none;
-        transform-origin: 0 0;
-        scroll-snap-type: none;
-        overflow-x: hidden;
-        overflow-y: scroll;
+
+    html,
+    body {
+        width: 100% !important;
+        height: auto !important;
+        position: static !important;
+        transform: none !important;
+        transform-origin: 0 0 !important;
+        overflow-x: hidden !important;
+        overflow-y: visible !important;
+        scroll-snap-type: none !important;
     }
 
     .slide {
-        width: 100vh;
-        height: auto;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center !important;
-        align-items: center !important;
-        text-align: center;
-        scroll-snap-align: none;
-        padding: 80px 20px 40px 24px !important;
-        overflow-x: hidden;
-        overflow-y: visible;
-        box-sizing: border-box;
+        display: block !important;
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 40px 20px !important;
+        margin: 0 !important;
+        overflow: visible !important;
+        scroll-snap-align: none !important;
+        box-sizing: border-box !important;
+    }
+
+    .slide:first-of-type {
+        padding-top: 100px !important;
+    }
+
+    .info-container {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        text-align: left !important;
+    }
+
+    .info-item {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 12px !important;
+    }
+
+    h1 {
+        font-size: 28px !important;
+        max-width: 100% !important;
+        margin: 0 auto 15px auto !important;
+        text-align: center !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+        max-width: 100% !important;
+        margin: 0 auto 15px auto !important;
+        text-align: center !important;
+    }
+
+    p {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 auto 15px auto !important;
+        text-align: left !important;
     }
 
     nav {
@@ -453,12 +497,16 @@ p {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
+        font-size: 14px !important;
+        padding: 12px 5px !important;
     }
 
-    .danmaku-container,
-    #imageLightbox {
-        width: 100vh !important;
-        height: 100vw !important;
+    .scroll-down-hint {
+        display: none !important;
+    }
+
+    .scroll-container {
+        width: 100% !important;
     }
 }
 
