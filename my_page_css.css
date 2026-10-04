@@ -421,24 +421,34 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-    body {
+    html, body {
         width: 100%;
         height: auto;
         position: static;
         transform: none;
         transform-origin: 0 0;
         scroll-snap-type: none;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 
     .slide {
         width: 100vh;
         height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
         scroll-snap-align: none;
         padding: 80px 20px !important;
+        overflow-x: hidden;
+        overflow-y: visible;
     }
 
     nav {
         width: 100% !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
     }
 
     .danmaku-container,
