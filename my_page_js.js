@@ -131,6 +131,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function createImgDanmaku(nextSlideElement, direction) {
+        if (window.innerWidth <= 1024) return;
+
         if (!nextSlideElement) return;
 
         const oldContainer = document.querySelector('.danmaku-container');
@@ -192,6 +194,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let isScrolling = false;
 
     window.addEventListener('wheel', (event) => {
+        if (window.innerWidth <= 1024) return;
+
         if (event.target.closest('nav')) return;
         const lightboxCheck = document.getElementById("imageLightbox");
         if (lightboxCheck && lightboxCheck.style.display === "flex") {
