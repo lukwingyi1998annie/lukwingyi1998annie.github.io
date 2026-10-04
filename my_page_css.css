@@ -517,7 +517,7 @@ p {
 
     body::after {
     content: "";
-    position: absolute !important;
+    position: fixed !important;
     top: 65px;
     bottom: 0.5vw;
     left: 0.5vw !important;
@@ -549,7 +549,7 @@ p {
 
 body::after {
     content: "";
-    position: fixed !important;
+    position: absolute !important;
     top: 65px;
     bottom: 0.5vw;
     left: 0.5vw !important;
