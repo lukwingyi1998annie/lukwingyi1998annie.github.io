@@ -421,18 +421,24 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-
-    html,
+     html {
+        width: 100% !important;
+        height: auto !important;
+        overflow-x: hidden !important;
+        overflow-y: visible !important;
+    }
+    
     body {
         width: 100% !important;
         height: auto !important;
-        position: static !important;
+        position: relative !important;
         transform: none !important;
         transform-origin: 0 0 !important;
         overflow-x: hidden !important;
         overflow-y: visible !important;
         scroll-snap-type: none !important;
     }
+
 
     .slide {
         display: block !important;
@@ -448,7 +454,7 @@ p {
     }
 
     .slide:first-of-type {
-        padding-top: 100px !important;
+        padding-top: 80px !important;
     }
 
     .info-container {
@@ -515,6 +521,7 @@ p {
         width: 100vw;
         height: 100vh;
         scroll-snap-type: y mandatory;
+        position: relative;
     }
 
     .slide {
@@ -527,11 +534,11 @@ p {
 
 body::after {
     content: "";
-    position: absolute;
+    position: absolute !important;
     top: 65px;
     bottom: 0.5vw;
-    left: 0.5vw;
-    right: 0.5vw;
+    left: 0.5vw !important;
+    right: 0.5vw !important;
     z-index: 9998;
     pointer-events: none;
     border: 2vw solid transparent;
