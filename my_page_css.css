@@ -514,21 +514,6 @@ p {
     .scroll-container {
         width: 100% !important;
     }
-
-    body::after {
-    content: "";
-    position: fixed !important;
-    top: 65px;
-    bottom: 0.5vw;
-    left: 0.5vw !important;
-    right: 0.5vw !important;
-    z-index: 9998;
-    pointer-events: none;
-    border: 2vw solid transparent;
-    border-image-source: url('/phto/frame/9_Block.png');
-    border-image-slice: 135;
-    border-image-repeat: round;
-}
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
